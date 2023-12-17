@@ -4,7 +4,7 @@
   "description": "![Design preview for the Pod request access landing page coding challenge](./preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "keywords": [],
   "author": "",

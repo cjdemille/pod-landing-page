@@ -1,2 +1,8 @@
-* {
-  border: 1px solid red; }
+body {
+  font-family: 'Chivo', sans-serif; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #54E6AF; }
