@@ -27,6 +27,7 @@
 
         @include respond(tab) {
             margin-bottom: 0;
+            width: 70%;
         }
     }
 
@@ -40,6 +41,10 @@
         color: $navy;
         background-color: $green;
         transition: all .3s;
+
+        @include respond(tab) {
+            flex: 1;
+        }
 
         &:hover,
         &:active {
