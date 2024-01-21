@@ -1,0 +1,57 @@
+.card {
+    padding: 3rem;
+    text-align: center;
+
+    @include respond(tab) {
+        text-align: left;
+        background-color: $navy;
+        width: 80%;
+        position: absolute;
+        bottom: 0;
+    }
+
+    @include respond(desktop) {
+        width: 60%;
+    }
+
+    &__header {
+        font-weight: 300;
+        font-size: 4.8rem;
+        line-height: 6.2rem;
+        text-transform: uppercase;
+        color: $green;
+
+        &--callout {
+            color: $white;
+            display: block;
+        }
+    }
+
+    &__text {
+        color: $light-gray;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        font-weight: 300;
+        margin: 3rem 0;
+    }
+
+    &__listen {
+        display: flex;
+        flex-direction: column-reverse;
+
+        @include respond(tab) {
+            flex-direction: column;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3.5rem 0 8rem;
+
+        @include respond(tab) {
+            margin: 3rem 0;
+        }
+    }
+}

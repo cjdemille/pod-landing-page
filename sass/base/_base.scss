@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    background: linear-gradient(rgba($navy, .7), rgba($navy, .7)), url('../assets/mobile/image-host.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 100svh;
+
+    @include respond(tab) {
+        background: url('../assets/desktop/bg-pattern-dots.svg'), $navy;
+        background-repeat: no-repeat;
+        background-position: 3rem bottom
+    }
+
+    @include respond(desktop) {
+        background: url('../assets/desktop/bg-pattern-dots.svg'), $navy;
+        background-repeat: no-repeat;
+        background-position: 100% 93%
+    }
+}
+
+.main {
+    position: absolute;
+    width: 100%;
+    top: 0;
+
+
+
+    @include respond(tab) {
+        background-image: url('../assets/tablet/image-host.jpg');
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 75%;
+        min-height: 80svh;
+    }
+
+    @include respond(desktop) {
+        background-image: url('../assets/desktop/image-host.jpg');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 60%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 2200px;
+    }
+}
+
+.logo {
+    margin: 8rem auto;
+    width: 30%;
+    display: block;
+
+    @include respond(tab) {
+        width: 15%;
+        margin: 8rem 3rem;
+    }
+}
