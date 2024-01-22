@@ -38,6 +38,7 @@
     &__listen {
         display: flex;
         flex-direction: column-reverse;
+        justify-content: space-between;
 
         @include respond(tab) {
             flex-direction: column;

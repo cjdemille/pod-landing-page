@@ -1,3 +1,18 @@
 body{
     font-family: 'Chivo', sans-serif;
 }
+
+.invalid-text{
+    color:transparent;
+    font-size: 1.8rem;
+    font-weight: 600;
+
+    @include respond(tab){
+        margin-left:5rem;
+        margin-top:1.5rem;
+    }
+}
+
+.show{
+    color:red;
+}
